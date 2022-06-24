@@ -3,19 +3,24 @@
 <meta charset="UTF-8">
 <title>Page Title</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="style.css">
 <style>
 </style>
-<script src=""></script>
+<script defer src="index.js"></script>
 <body>
 
 <img src="img_la.jpg" alt="LA" style="width:100%">
 
-<div class="">
- <h1>This is a Heading</h1>
- <p>This is a paragraph.</p>
- <p>This is another paragraph.</p>
-</div>
+<div class="form-container">
+    <h2>Leave a Comment</h2>
+    <form>
+     <textarea placeholder='Write Here'></textarea>
+      <div class="btn">
+        <input type="submit" value='Comment'>
+        <button id='clear' href='#'>Cancel</button>
+      </div>
+    </form>
+  </div>
 
 </body>
 </html>
