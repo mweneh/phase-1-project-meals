@@ -335,7 +335,7 @@ textarea
 @media screen and (min-width: 768px){
     #food{
         display:grid;
-        grid-auto-columns: 2;
+        grid-auto-columns: repeat(2, 1fr);
         gap: 2rem;
     }
     .meal-item{
@@ -348,7 +348,7 @@ textarea
 
 @media screen and (min-width: 992px){
     #food{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
