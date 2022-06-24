@@ -65,7 +65,7 @@ function fetchMealList(){
                                 <a href = "${meal.strYoutube}" target = "_blank">Watch Video instead?</a>
                             </div>
 
-                            <a href = "#" class = "recipe-btn">Order Meal</a>
+                            <a href = "#" class = "recipe-btn">Get Recipe</a>
                             <a href = '@' class = "submit-btn"> Add to Favorites</a>
                         </div>
                     </div>

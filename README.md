@@ -1,20 +1,20 @@
 # phase-1-project-meals
-# FlataBeer
+
 
 Today you'll be building an app for searching meals by name, viewing recipe, area,category,watching recipe YouTube Video and adding a comment on the main page. You will be using
-www.themealdb.com API and building out the frontend for our app, Meals Search.
+https://www.themealdb.com API and building out the frontend for our app, phase-1-project-meals.
 
 
 
 ## Setup
 Clone this repo in your local environment 
-navigate to this directory and open your code writer i.e VS Code by typing 'code .' in your terminal
-add index.html, index.js and style.css files in your work directory 
+Navigate to this directory and open your code writer i.e VS Code by typing 'code .' in your terminal
+Add index.html, index.js and style.css files in your work directory 
 Run this command to get the backend started:
 
 ```console
 
-test your API using Postman 
+Test your API using Postman 
 If successful, start coding 
 
 ## Deliverables
@@ -26,7 +26,7 @@ As a user, I can:
 You will need to fetch data using 
 https://www.themealdb.com/api/json/v1/1/search.php?s=${searchInput}
 
-where searchInput is the meal name like Shawarma
+Where searchInput is the meal name like Shawarma
 
 
 
