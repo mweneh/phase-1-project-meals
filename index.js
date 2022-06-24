@@ -1,5 +1,5 @@
 let textArea= document.querySelector('textarea');
-const backUp = feild.getAttribute('placeholder');
+const backUp = textArea.getAttribute('placeholder');
 const btn = document.querySelector('.btn');
 const clear = document.getElementById('clear')
 

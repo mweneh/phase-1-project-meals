@@ -3,14 +3,17 @@
 
 .form-container
 {
-    width: 600px;
-    border: 2px solid #333;
+    width: 300px;
+    height:auto;
+    border: 2px solid rgb(128, 128, 128);
     padding: 15px 10px;
+    align-content: center;
+    margin-left: 1000px;
 }
-.form-container h2
+.form-container h3
 {
     text-align: center;
-    margin-bottom: 15px
+    margin-bottom: 20px
 }
 textarea
 {
