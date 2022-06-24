@@ -60,6 +60,17 @@ function fetchMealList(){
             mealList.classList.add('notFound');
         }
 
-       
+        mealList.innerHTML = html;
     });
+}
+// get recipe of the meal
+ function  fetchMealRecipe(e){
+    e.preventDefault();
+    if(e.target.classList.contains('recipe-btn')){
+        let mealItem = e.target.parentElement.parentElement;
+        fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`)
+        .then(response => response.json())
+        .then(data => mealRecipePlugin(data.meals));
+          //console.log(data)
+    }
 }
