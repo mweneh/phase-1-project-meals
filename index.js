@@ -9,6 +9,21 @@ const mealContent = document.querySelector('.details-content');
 const recipeCloseBtn = document.querySelector('#recipe-close-btn');
 const recipeBtn = document.querySelector('.recipe-btn')
 
+// event listeners
+document.addEventListener('DOMContentLoaded',()=>{})
+searchButton.addEventListener('click', fetchMealList);
+searchButton.addEventListener('keypress' ,e =>{
+    if (e.keyCode == 13){
+    fetchMealList()}
+    
+
+});
+mealList.addEventListener('click', fetchMealRecipe);
+
+recipeCloseBtn.addEventListener('click', () => {
+    mealContent.parentElement.classList.remove('showRecipe');
+});
+
 textArea.onfocus = function(){
     this.setAttribute('placeholder', '');
     this.style.borderColor = '#333';
