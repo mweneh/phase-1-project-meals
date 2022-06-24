@@ -60,6 +60,6 @@ function fetchMealList(){
             mealList.classList.add('notFound');
         }
 
-        mealList.innerHTML = html;
+       
     });
 }
