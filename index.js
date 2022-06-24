@@ -15,7 +15,9 @@ searchButton.addEventListener('click', fetchMealList);
 searchButton.addEventListener('keypress' ,e =>{
     if (e.keyCode == 13){
     fetchMealList()}
-    
+btn.addEventListener('submit', (e) =>{
+    e.preventDefault
+})  
 
 });
 mealList.addEventListener('click', fetchMealRecipe);
