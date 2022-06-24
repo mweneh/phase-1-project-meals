@@ -87,12 +87,9 @@ body{
     padding: 15px 10px;
     align-content: center;
     margin-left: 1000px;
+    background-color: #fff;
 }
-.form-container h3
-{
-    text-align: center;
-    margin-bottom: 20px
-}
+
 textarea
 {
     height: 20px;
@@ -117,7 +114,10 @@ textarea
     cursor: pointer;
 
     color:white;
-    background-color: #273c75
+    background-color:blue;
+}
+.submit:hover{
+    background: orange;
 }
 #clear
 {
@@ -127,7 +127,9 @@ textarea
     padding: 5px 10px;
     border-radius: 3px;
 }
-
+#clear:hover{
+    background: red;
+}
 
 .food-result{
     margin-top: 4rem;
@@ -344,6 +346,10 @@ textarea
     }
 }
 
-
+@media screen and (min-width: 992px){
+    #food{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 
