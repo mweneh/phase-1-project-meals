@@ -1,26 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>Search for Random Meals by Name</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<style>
-</style>
-<script defer src="index.js"></script>
-<body>
+    <meta charset="UTF-8">
+    <title>Search for Random Meals by Name</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+    <script defer src="index.js"></script>
+    <body>
+        <div class="container">
+                
+            <div class="row text-center">
+                <div class = "meal-search"></div>
+                <h1>
+                    Feeling Hungry?
+                </h1>
+                <blockquote>We got you.</blockquote>
+                
+            </div>
 
 
+            <div class="form-container">
+                <h2>Leave a Comment</h2>
+                <form>
+                <textarea placeholder='Write Here'></textarea>
+                <div class="btn">
+                    <input type="submit" value='Comment'>
+                    <button id='clear' href='#'>Cancel</button>
+                </div>
+                </form>
+            </div>
+            <!-- search-button -->
+            <div id="meal" class="meal-search-box">
+                <input type= "text" class= "search-name" placeholder="meal name" id="search-input" >
+                <button type="submit" class="search-btn" id="search-button">Search</button>   
+            </div>
 
-<div class="form-container">
-    <h2>Leave a Comment</h2>
-    <form>
-     <textarea placeholder='Write Here'></textarea>
-      <div class="btn">
-        <input type="submit" value='Comment'>
-        <button id='clear' href='#'>Cancel</button>
-      </div>
-    </form>
-  </div>
 
-</body>
+            <!-- search Results -->
+            <div class = "food-result">
+                <h2 class = "title">Search Results:</h2>
+                <div id= "food">
+
+                    <div class = "meal-details">
+                        <!-- recipe button  -->
+                        <button type = "button" class = "btn recipe-btn" id = "recipe-close-btn">
+                        <i class = "i"></i>
+                        </button>
+                
+
+                        <!-- meal content -->
+                        <div class= "details-content" ></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
