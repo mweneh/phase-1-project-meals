@@ -1,6 +1,6 @@
 let textArea= document.querySelector('textarea');
 const backUp = textArea.getAttribute('placeholder');
-const btn = document.querySelector('.btn');
+const form = document.querySelector('form');
 const clear = document.getElementById('clear')
 
 const searchButton = document.querySelector('#search-button');
@@ -15,8 +15,8 @@ searchButton.addEventListener('click', fetchMealList);
 searchButton.addEventListener('keypress' ,e =>{
     if (e.keyCode == 13){
     fetchMealList()}
-btn.addEventListener('submit', (e) =>{
-    e.preventDefault
+form.addEventListener('submit', (e) =>{
+    e.preventDefault()
 })  
 
 });
@@ -66,7 +66,7 @@ function fetchMealList(){
                             </div>
 
                             <a href = "#" class = "recipe-btn">Get Recipe</a>
-                            <a href = '@' class = "submit-btn"> Add to Favorites</a>
+                            
                         </div>
                     </div>
                 `;
