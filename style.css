@@ -6,14 +6,36 @@
     box-sizing: border-box;
 }
 
-body{
-    font-weight: 300;
-    font-size: 1.05rem;
-    line-height: 1.8;
-    font-family: 'Poppins', sans-serif;
-    justify-content: center;
-}
+body {
+    background-image: url("https://unsplash.com/photos/sandwich-with-boiled-egg-fdlZBWIP0aM/image.jpg");  /* Replace with your image path */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: sans-serif;  
+  }
+  
+  #meal {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+  }
 
+  h1 {
+    color: #f0fff0;  /* Light color */
+    font-size: 3em;  /* Increase font size */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);  /* Add a subtle shadow */
+  }
+  
+  blockquote {
+    font-style: italic;
+    color: #ffc107;  /* Orange color */
+    font-size: 1.2em;
+    margin-top: 0;  /* Remove top margin */
+  }
+  
 
 .btn{
     font-family: inherit;
@@ -63,21 +85,19 @@ body{
     border-bottom-left-radius: 2rem;
 }
 
-.search-btn{
-    width: 120px;
-    height: 50px;
-    font-size: 1.8rem;
-    background:#2708d6;
-    color: #fff;
-    border: none;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    transition: all 0.4s linear;
-    
+.search-btn {
+  background-image: linear-gradient(to right, #f0984b, #f0c27d);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.search-btn:hover{
-    background:#d65108;
+
+.search-btn:hover {
+  background-image: linear-gradient(to right, #ffc107, #f0984b);
 }
+
 
 .form-container
 {
@@ -322,7 +342,29 @@ textarea
 }
 
 
-
+.sample-meals {
+    text-align: center;  /* Center the content */
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* Adjust columns based on screen size */
+    grid-gap: 10px;  /* Add spacing between items */
+    margin: 10px auto;  /* Add margin for better placement */
+  }
+  
+  .meal-item {
+    background-color: #f5f5f5;  /* Light background color */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;  /* Make it look clickable */
+  }
+  
+  .meal-item:hover {
+    background-color: #e0e0e0;  /* Change background on hover */
+  }
+  
 
 @media screen and (min-width: 600px){
     .meal-search-box{
